@@ -9,8 +9,10 @@ nav{
 
 
 #navColor{
+    font-family: "Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
     text-align: center;
     color: #000000;
+    font-size: 30px;
 }
 
 
@@ -49,7 +51,7 @@ nav{
 }
 
 #containerFaleConosco{
-    background-color: #F28482;
+    background-color: #F4CECD;
     color: #000000;
 }
 /* Formatção das imagens do Card de Produtos*/
@@ -65,7 +67,7 @@ nav{
 
 /* Formatação dos Cards de produtos*/
 #card{
-    border-color: #F28482;
+    border-color: #F4CECD;
     border-style: groove;
     border-radius: 3px;
     margin-top: 10px;
