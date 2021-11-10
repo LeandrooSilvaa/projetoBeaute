@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="bootstrap/dist/css/bootstrap.min.css"    rel="stylesheet" type="text/css">
+    <script src="bootstrap/dist/js/bootstrap.bundle.min.js"  ></script>
+    <script defer src="fontawesome-free-5.15.4-web/js/all.js"  ></script>
+  </head>
+  <body>        
+    <nav class="navbar navbar-dark " style="background-color:#F4CECD;">      
+      <div class="container-fluid">         
+        <button class="navbar-toggler"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon" ></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img src="img/logo2.jpg" id="logo"></a>
+        <a href="login.html" id="navColor"><i class="far fa-user" id="iconeMenu"></i></a>
+        <div class="offcanvas offcanvas-start " style="background-color:#F4CECD;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-body"> 
+            <div class="offcanvas-header">
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Busque aqui..." aria-label="Search">
+                <button class="btn btn-outline-light" style="background-color:#F28482;" type="submit">Buscar</button>
+              </form>            
+            </div> <br>
+            <ul class="navbar-nav  flex-grow-1 pe-3" style="background-color:#F4CECD;">
+              <li class="nav-item">
+                <a class="nav-link item active" aria-current="page" href="index.html" id="navColor">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link item" href="produtos.html" id="navColor">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link item" href="faleConosco.html" id="navColor">Fale Conosco</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link item" href="sobre.html" id="navColor">Quem Somos</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </nav>  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-6">
+          <div class="card mb-3" id="card">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/logo2.jpg" class="img-fluid rounded-start">
+              </div>
+              <div class="col-sm-8">
+                <div class="card-body" id="cardIcone">
+                  <h5 class="card-title" >Quem Somos</h5>
+                  <p class="card-text">
+                    A Beauté é uma empresa jovem, que nasceu através de um projeto integrador de dois jovens.
+                    Temos um capital humano e tecnológico, dando foco em vendas E-commerce e Marcket-Place.
+                    Atuamos nas áreas de Cosméticos, Maquiagens, e produtos em geral para cuidados de pele.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+              <div class="card" id="card">
+                <div class="card-body" id="cardIcone">
+                  <h5 class="card-title">Valores</h5>
+                  <p class="card-text">
+                    Vivemos e aplicamos diariamente os 5 valores:
+                     Simplicidade, Objetividade, Respeito, Humildade e Determinação.
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card" id="card">
+                <div class="card-body" id="cardIcone">
+                  <h5 class="card-title">Missão</h5>
+                  <p class="card-text">
+                    Superar as expectativas dos clientes com produtos de qualidades,
+                    utilizando tecnologia e pessoas com total comprometimento.</p>                      
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-sm-6">
+              <div class="card" id="card">
+                <div class="card-body" id="cardIcone">
+                  <h5 class="card-title">Equipe</h5>
+                  <p class="card-text">
+                    Somos uma equipe nova porém com uma vasta experiência na área de E-commerce.
+                    Nossa proposta de trabalho é oferecer ao cliente o melhor produto e com a melhor qualidade e praticidade.
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1" id="modalSacola">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="card-title" style="text-align: center;">Você não tem nenhum produto na sacola</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <i class="nav-link item fas fa-shopping-bag" style="width: 50px; height: 50px; color: #424242; margin-left: 50%;"></i>
+              <p style="text-align: center;">Quando você escolher seus produtos, mostraremos aqui tudo que você deseja comprar em nosso site. Informaremos também seus descontos e amostras para receber.</p>
+          </div>
+          <div class="modal-footer">
+           <a href="produtos.html"> <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Escolher produtos</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

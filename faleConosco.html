@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fale Conosco</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <link href="bootstrap/dist/css/bootstrap.min.css"    rel="stylesheet" type="text/css">
+        <script src="bootstrap/dist/js/bootstrap.bundle.min.js"  ></script>
+        <script defer src="fontawesome-free-5.15.4-web/js/all.js"  ></script>
+    </head>
+    <body>        
+      <nav class="navbar navbar-dark " style="background-color:#F4CECD;">      
+        <div class="container-fluid">         
+          <button class="navbar-toggler"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon" ></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="img/logo2.jpg" id="logo"></a>
+          <a href="login.html" id="navColor"><i class="far fa-user" id="iconeMenu"></i></a>
+          <div class="offcanvas offcanvas-start " style="background-color:#F4CECD;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-body"> 
+              <div class="offcanvas-header">
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Busque aqui..." aria-label="Search">
+                  <button class="btn btn-outline-light" style="background-color:#F28482;" type="submit">Buscar</button>
+                </form>            
+              </div> <br>
+              <ul class="navbar-nav  flex-grow-1 pe-3" style="background-color:#F4CECD;">
+                <li class="nav-item">
+                  <a class="nav-link item active" aria-current="page" href="index.html" id="navColor">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link item" href="produtos.html" id="navColor">Produtos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link item" href="faleConosco.html" id="navColor">Fale Conosco</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link item" href="sobre.html" id="navColor">Quem Somos</a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container" id="containerFaleConosco">
+          <div class="row">
+              <h1> Entre em contato conosco.</h1>
+          </div>
+      </div>
+      <div class="container" id="card">
+          <div class="row">
+              <div class="col-md-12 col-sm-8">
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Email:</label>
+                      <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+                      
+                    </div>
+                    <div class="mb-3">
+                      <label for="mensagem" class="form-label">Digite sua dúvida:</label>
+                      <textarea class="form-control" id="mensagem" rows="3"></textarea>
+                      
+                  </div>
+                  <button type="submit" class="btn btn-primary" name="btn_enviar" id="btn_enviar" onclick="limpaDados()" style="margin-bottom: 10px;">Enviar</button>
+              </div>
+              <br>
+          </div>  
+      </div>
+      <div class="container" id="card">
+          <div class="row">
+              <div class="col-md-12 col-sm-6"> <br>
+                  <h1> Canais de Atendimento:</h1>                    
+              </div>
+          </div> 
+          <div class="row">
+              <div class="col-md-3 col-sm-6" >
+                  <div class="card mb-3" id="card">
+                      <i class="fas fa-info-circle" id="icone"></i>
+                      <div class="card-body" id="cardIcone">
+                        <h5 class="card-title" id="textCard">Ajuda</h5> 
+                        <p class="card-text" id="textIcone">Precisa de ajuda? <br> <a href="#" id="textCard">Clique aqui</a>  e use nossa assistente virtual </p>
+                        <p class="card-text" id="textIcone">Horário de atendimento: Seg. à Sáb. 9h às 18h</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <div class="card mb-3" id="card">
+                      <i class="fab fa-whatsapp-square" id="icone"></i>
+                      <div class="card-body" id="cardIcone">
+                        <h5 class="card-title" id="textCard">WhatsApp</h5> <br>
+                        <p class="card-text" id="textIcone">11 90000-1111</p> <br>
+                        <p class="card-text" id="textIcone">Horário de atendimento: Seg. à Sáb. 9h às 18h</p>
+                      </div>
+                  </div>              
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <div class="card mb-3" id="card">
+                      <i class="fas fa-envelope-square" id="icone"></i>
+                      <div class="card-body" id="cardIcone">
+                        <h5 class="card-title" id="textCard">E-Mail</h5> 
+                        <p class="card-text" id="textIcone">Possui alguma dúvida? <a href="#" id="textCard">Clique aqui</a> e nos envie um e-mail. </p>
+                        <p class="card-text" id="textIcone">Horário de atendimento: Seg. à Sáb. 9h às 18h</p>
+                      </div>
+                  </div>                   
+              </div>   
+              <div class="col-md-3 col-sm-6">
+                  <div class="card mb-3" id="card">
+                      <i class="fas fa-phone-square" id="icone"></i>
+                      <div class="card-body" id="cardIcone">
+                        <h5 class="card-title" id="textCard">Telefone</h5> <br>
+                        <p class="card-text" id="textIcone">0800 022 1212</p> <br>
+                        <p class="card-text" id="textIcone">Horário de atendimento: Seg. à Sáb. 9h às 18h</p>
+                      </div>
+                  </div>                   
+              </div>                      
+          </div>            
+      </div>
+          
+      <div class="modal fade" tabindex="-1" id="modalSacola">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="card-title" style="text-align: center;">Você não tem nenhum produto na sacola</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <i class="nav-link item fas fa-shopping-bag" style="width: 50px; height: 50px; color: #424242; margin-left: 50%;"></i>
+                <p style="text-align: center;">Quando você escolher seus produtos, mostraremos aqui tudo que você deseja comprar em nosso site. Informaremos também seus descontos e amostras para receber.</p>
+            </div>
+            <div class="modal-footer">
+             <a href="produtos.html"> <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Escolher produtos</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+    </body>
+</html>

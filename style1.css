@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    
+}
+body{
+    font-family: arial;
+}
+
+
+
+img{
+    width: 40px;
+}
+
+nav{
+    background-color: rgba(242, 132, 130, 0.5);
+    width: 245px;
+    left: -245px;
+    height: 100rem;
+    position: absolute;
+    transition: all .5s ease;
+    
+}
+
+ul{
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    margin-top: 70px;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 20px 5px;
+    color: #FFFFFF;
+}
+
+a:hover{
+    background-color: #F28482;
+}
+
+label{
+    
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked~ nav{
+    transition: all .5s ease;
+    transform: translateX(245px);
+    
+}
+
+.item:hover{
+    background-color: #F28482;
+    border-radius: 3px;
+}
+ 
+/*Formatação geral*/
+.container{
+    
+    border-color: #F28482;
+    margin-top: 10px; 
+    border-radius: 3px; 
+    
+}
+
+#containerFaleConosco{
+    background-color: #F28482;
+    color: #000000;
+}
+/* Formatção das imagens do Card de Produtos*/
+
+#imgs {
+    margin: 10px auto;
+    border-radius: 3px; 
+    height: 15rem;
+    width: 80%;
+}
+
+
+
+/* Formatação dos Cards de produtos*/
+#card{
+    border-color: #F28482;
+    border-style: groove;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.card-body{
+    background-color: #F28482;
+}
+
+#textCard{
+    color: #000000;
+}
+
+/* Formatação do Icones e cards da tela de Fale Conosco*/
+#cardIcone{
+    margin-top: 15px;
+    background-color: #FFFFFF;
+}
+
+#textIcone{
+    color: #000000;
+    text-align: center; 
+    
+}
+
+#item{
+    margin-bottom: 10px;
+}
+
+#icone{
+    margin: 10px auto;
+    border-radius: 3px; 
+    height: 8rem;
+    width: 80%;
+    color: #F28482;
+}
+
+
