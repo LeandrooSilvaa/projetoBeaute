@@ -10,7 +10,7 @@
       <script src="bootstrap/dist/js/bootstrap.bundle.min.js"  ></script>
       <script defer src="fontawesome-free-5.15.4-web/js/all.js"  ></script>
   </head>
-  <body style="background-color: #616161;">
+  <body style="background-color: #EEEEEE;">
 
     <nav class="navbar navbar-dark " style="background-color:#F4CECD;">      
       <div class="container-fluid">         
@@ -51,21 +51,25 @@
     <div class="container" >
       <div class="justify-content-center align-items-center row">
         <div class="col-md-4 col-sm-6" >
+          <br>
           <div class="card mb-3">
-              <img src="img/logo2.jpg" class="card-img-top" style="width: 100%; height: 200px;">
-            <div class="card-body">
-              <h5 class="card-title" style="color: #FFFFFF; text-align: center;">Login</h5>
+            
+            <div class="card-body"> <br>
+              <h5 class="card-title" style="color: #000000; text-align: center;">Login</h5> <br> <br>
               <form>
                 <div class="mb-3">
-                  <label for="usuario" class="form-label" style="color: #FFFFFF;">Usuário:</label>
+                  <label for="usuario" class="form-label" style="color: #000000;">Usuário:</label>
                   <input type="email" class="form-control" id="usuario" aria-describedby="emailHelp" required>
-                </div>
+                </div> 
                 <div class="mb-3">
-                  <label for="senha" class="form-label" style="color: #FFFFFF;" >Senha:</label>
+                  <label for="senha" class="form-label" style="color: #000000;" >Senha:</label>
                   <input type="password" class="form-control" id="senha" required>
                 </div>
-                <button type="submit" class="btn btn-success" style="text-align: center;">Entrar</button>
-               <a href="cadastro.html"><button type="button" class="btn btn-primary"   >Cadastre-se</button></a>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button type="submit" class="btn btn-success " >Entrar</button>
+                  <a type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#cadastro">Cadastre-se</a>
+                </div>
+                
               </form>
               
             </div>
@@ -75,27 +79,106 @@
     </div>
 
 
+  
 
-
-
-    <div class="modal fade" tabindex="-1" id="modalSacola">
-      <div class="modal-dialog">
+    <div class="modal fade" id="cadastro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
         <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="card-title" style="text-align: center;">Você não tem nenhum produto na sacola</h5>
+          <div class="modal-header" style="background-color: #EEEEEE;">
+            <h5 class="modal-title" id="cadastroLabel">Cadastro</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
-              <i class="nav-link item fas fa-shopping-bag" style="width: 50px; height: 50px; color: #424242; margin-left: 50%;"></i>
-              <p style="text-align: center;">Quando você escolher seus produtos, mostraremos aqui tudo que você deseja comprar em nosso site. Informaremos também seus descontos e amostras para receber.</p>
+          <div class="modal-body" style="background-color: #F4CECD;">
+            <div class="container" >
+              <div class="justify-content-center align-items-center row">
+                <div class="col-md-12 col-sm-6" >
+                  <form class="row" >
+                    <div class="col-md-6">
+                      <label for="nome" class="form-label" style="color: #000000;">Nome:</label>
+                      <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="sobrenome" class="form-label" style="color: #000000;">Sobrenome:</label>
+                      <input type="text" class="form-control" id="sobrenome" placeholder="Digite seu Sobrenome" required>
+                    </div>                    
+                    <div class="col-md-4">
+                      <label for="sexo" class="form-label" style="color: #000000;">Sexo:</label>
+                      <select id="sexo" class="form-select" required>
+                        <option selected disabled value="">Selecione...</option>
+                        <option>Masculino</option>
+                        <option>Feminino</option>
+                        <option>Outro</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="cpf" class="form-label" style="color: #000000;">CPF:</label>
+                      <input type="number" class="form-control" id="cpf" required>
+                    </div> 
+                    <div class="col-md-4">
+                      <label for="cep" class="form-label" style="color: #000000;">CEP:</label>
+                      <input type="number" class="form-control" id="sobrenome" placeholder="Digite o cep " required>
+                    </div>
+                    <div class="col-md-8">
+                      <label for="endereco" class="form-label" style="color: #000000;">Endereço:</label>
+                      <input type="text" class="form-control" id="sobrenome" placeholder="Digite o endereço" required>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="sobrenome" class="form-label" style="color: #000000;">Número:</label>
+                      <input type="number" class="form-control" id="sobrenome" placeholder="N° " required>
+                    </div> 
+                    <div class="col-12 text-end">
+                      <button type="submit" class="btn btn-primary "style="margin-top: 10px;"  data-bs-toggle="modal" data-bs-target="#finalizarCadastro">Avançar</button>
+                    </div>                                         
+                  </form>              
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="modal-footer">
-           <a href="produtos.html"> <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Escolher produtos</button></a>
-          </div>
+          
         </div>
       </div>
     </div>
-      
+    
+    <div class="modal fade" id="finalizarCadastro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog ">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #EEEEEE;">
+            <h5 class="modal-title" id="cadastroLabel">Cadastro</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="background-color: #F4CECD;">
+            <div class="container" >
+              <div class="justify-content-center align-items-center row">
+                <div class="col-md-12 col-sm-6" >
+                  <form class="row" >
+                    <div class="col-md-12">
+                      <label for="enderecoEmail" class="form-label" style="color: #000000;">E-mail:</label>
+                      <input type="email" class="form-control" id="email" aria-describedby="enderecoEmail" placeholder="Ex: nome@gmail.com"required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="senha" class="form-label" style="color: #000000;">Senha:</label>
+                      <input type="password" class="form-control" id="senha" placeholder="Digite a senha" required>
+                    </div>   
+                    <div class="col-md-6">
+                      <label for="confirmaSenha" class="form-label" style="color: #000000;">Confirmar senha:</label>
+                      <input type="password" class="form-control" id="senha" placeholder="Digite a senha" required>
+                    </div>                  
+                    <div class="col-12 text-end">
+                      <button class="btn btn-primary" style="margin-top: 10px;" data-bs-toggle="modal" data-bs-target="#cadastro">Voltar</button>
+                      <button type="submit" class="btn btn-primary "  name="btn_cadastrar" id="btn_cadastrar" style="margin-top: 10px;">Salvar</button>
+                    </div>                      
+                  </form>              
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+
+
+
+    
       
   </body>
 </html>

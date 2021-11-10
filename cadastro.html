@@ -44,30 +44,28 @@
           </div>
         </div>
       </div>
-    </nav>
-
-
+    </nav> <br><br>
     <div class="container" >
       <div class="justify-content-center align-items-center row">
         <div class="col-md-12 col-sm-6" >
           <div class="card mb-3">
             <div class="card-body">
-              <h5 class="card-title" style="color: #FFFFFF; text-align: center;">Cadastro</h5>
+              <h5 class="card-title" style="color: #000000; text-align: center;">Cadastro</h5>
               <form class="row" >
-                <div class="col-md-4">
-                  <label for="nome" class="form-label" style="color: #FFFFFF;">Nome:</label>
+                <div class="col-md-6">
+                  <label for="nome" class="form-label" style="color: #000000;">Nome:</label>
                   <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
                   </div>
-                <div class="col-md-4">
-                  <label for="sobrenome" class="form-label" style="color: #FFFFFF;">Sobrenome:</label>
+                <div class="col-md-6">
+                  <label for="sobrenome" class="form-label" style="color: #000000;">Sobrenome:</label>
                   <input type="text" class="form-control" id="sobrenome" placeholder="Digite seu Sobrenome" required>
                 </div>
                 <div class="col-md-4">
-                  <label for="enderecoEmail" class="form-label" style="color: #FFFFFF;">E-mail:</label>
+                  <label for="enderecoEmail" class="form-label" style="color: #000000;">E-mail:</label>
                   <input type="email" class="form-control" id="email" aria-describedby="enderecoEmail" placeholder="Ex: nome@gmail.com"required>
                 </div>
                 <div class="col-md-4">
-                  <label for="sexo" class="form-label" style="color: #FFFFFF;">Sexo:</label>
+                  <label for="sexo" class="form-label" style="color: #000000;">Sexo:</label>
                   <select id="sexo" class="form-select" required>
                     <option selected disabled value="">Selecione...</option>
                     <option>Masculino</option>
@@ -76,20 +74,36 @@
                   </select>
                 </div>
                 <div class="col-md-4">
-                  <label for="cpf" class="form-label" style="color: #FFFFFF;">CPF:</label>
+                  <label for="cpf" class="form-label" style="color: #000000;">CPF:</label>
                   <input type="number" class="form-control" id="cpf" required>
+                </div> 
+                <div class="col-12 ">
+                  <button type="submit" class="btn btn-primary "  name="btn_cadastrar" id="btn_cadastrar" onclick="lucas()" style="margin-top: 10px;">Cadastrar</button>
                 </div>
-                
-                <div class="col-12">
-                  <button type="submit" class="btn btn-primary"  name="btn_cadastrar" id="btn_cadastrar" onclick="lucas()" style="margin-top: 10px;">Cadastrar</button>
-                </div>
-              </form>
-              
+              </form>              
             </div>
-            </div>
+          </div>
         </div>
       </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="modal fade" tabindex="-1" id="modalSacola">
       <div class="modal-dialog">
