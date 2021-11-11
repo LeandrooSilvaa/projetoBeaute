@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="bootstrap/dist/css/bootstrap.min.css"    rel="stylesheet" type="text/css">
+    <script src="bootstrap/dist/js/bootstrap.bundle.min.js"  ></script>
+    <script defer src="fontawesome-free-5.15.4-web/js/all.js"  ></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-dark " style="background-color:#F4CECD;">      
+      <div class="container-fluid">         
+        <button class="navbar-toggler"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon" ></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img src="img/logo3.png" ></a>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary " title="Sair" ><a href="login.html" style="color: #FFFFFF;"><i class="fas fa-sign-out-alt"></i></a></button>
+          <button type="button" class="btn btn-secondary  dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+           <a style="color: #FFFFFF;">Leandro </a>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#trocarSenha">Trocar Senha</a></li>
+            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#meusDados">Meus Dados</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Configurações</a></li>
+          </ul>
+        </div>
+
+
+
+
+
+
+
+        
+        <div class="offcanvas offcanvas-start " style="background-color:#F4CECD;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-body"> 
+            <div class="offcanvas-header">
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Busque aqui..." aria-label="Search">
+                <button class="btn btn-outline-light" style="background-color:#F28482;" type="submit">Buscar</button>
+              </form>            
+            </div> <br>
+            <ul class="navbar-nav  flex-grow-1 pe-3" style="background-color:#F4CECD;">
+              <li class="nav-item">
+                <a class="nav-link item active" aria-current="page" href="index.html" id="navColor">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link item" href="produtos.html" id="navColor">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link item" href="faleConosco.html" id="navColor">Fale Conosco</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link item" href="sobre.html" id="navColor">Quem Somos</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </nav> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="modal fade" tabindex="-1" id="trocarSenha">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #EEEEEE;">
+            <h5 class="modal-title" id="atualizaLabel" style="color: #B7094C;">Trocar Senha</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="background-color: #F4CECD;">
+            <form>
+              <div class="mb-3">
+                <label for="senhaAtual" class="form-label" style="color: #000000;">Senha atual:</label>
+                <input type="text" class="form-control" id="senhaAtual" required>
+              </div> 
+              <div class="mb-3">
+                <label for="senha" class="form-label" style="color: #000000;" >Nova Senha:</label>
+                <input type="password" class="form-control" id="trocaSenha" required>
+              </div>
+              <div class="mb-3">
+                <label for="senha" class="form-label" style="color: #000000;" >Confirma Senha:</label>
+                <input type="password" class="form-control" id="confirmaSenha" required>
+              </div>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button type="submit" class="btn " id="btnLogar" onclick="alteraSenha()" style="background-color: #2A9D8F; color: #FFFFFF;">Salvar</button>
+              </div>               
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+
+
+    <div class="modal fade" tabindex="-1" id="meusDados">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #EEEEEE;">
+            <h5 class="modal-title" id="meusDadosLabel" style="color: #B7094C;">Meus Dados</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="background-color: #F4CECD;">                       
+            <table class="table" style="text-align: center;">
+              <thead>
+                <tr>
+                  <th scope="col">Nome</th>
+                  <th scope="col">Sobrenome</th>
+                  <th scope="col">Sexo</th>
+                  <th scope="col">Cpf</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Leandro</td>
+                  <td>Silva</td>
+                  <td>Masculino</td>
+                  <td>111.222.333-44</td>                
+              </tbody>
+            </table>
+            <table class="table" style="text-align: center;">
+              <thead>
+                <tr>
+                  <th scope="col">Cep</th>
+                  <th scope="col">Endereço</th>
+                  <th scope="col">Número</th>            
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>06300-100</td>
+                  <td>Av. Brasil</td>
+                  <td>100</td>                
+              </tbody>
+            </table>
+
+            <div class="col-12 text-end">
+              
+              <button type="submit" class="btn "style="margin-top: 10px; background-color: #B7094C; color: #FFFFFF"  data-bs-toggle="modal" data-bs-target="#atualizaDados">Atualizar</button>            
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="modal fade" id="atualizaDados" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #EEEEEE;">
+            <h5 class="modal-title" id="atualizaLabel" style="color: #B7094C;">Atualizar</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="background-color: #F4CECD;">
+            <div class="container" >
+              <div class="justify-content-center align-items-center row">
+                <div class="col-md-12 col-sm-6" >
+                  <form class="row" >
+                    <div class="col-md-6">
+                      <label for="nome" class="form-label" style="color: #000000;">Nome:</label>
+                      <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="sobrenome" class="form-label" style="color: #000000;">Sobrenome:</label>
+                      <input type="text" class="form-control" id="sobrenome" placeholder="Digite seu Sobrenome" required>
+                    </div>                    
+                    <div class="col-md-4">
+                      <label for="sexo" class="form-label" style="color: #000000;">Sexo:</label>
+                      <select id="sexo" class="form-select" required>
+                        <option selected disabled value="">Selecione...</option>
+                        <option>Masculino</option>
+                        <option>Feminino</option>
+                        <option>Outro</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="cpf" class="form-label" style="color: #000000;">CPF:</label>
+                      <input type="number" class="form-control" id="cpf" required>
+                    </div> 
+                    <div class="col-md-4">
+                      <label for="cep" class="form-label" style="color: #000000;">CEP:</label>
+                      <input type="number" class="form-control" id="sobrenome" placeholder="Digite o cep " required>
+                    </div>
+                    <div class="col-md-8">
+                      <label for="endereco" class="form-label" style="color: #000000;">Endereço:</label>
+                      <input type="text" class="form-control" id="sobrenome" placeholder="Digite o endereço" required>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="sobrenome" class="form-label" style="color: #000000;">Número:</label>
+                      <input type="number" class="form-control" id="sobrenome" placeholder="N° " required>
+                    </div> 
+                    <div class="col-12 text-end">
+                      <button class="btn btn-secondary" style="margin-top: 10px;" data-bs-toggle="modal" data-bs-target="#meusDados">Voltar</button>
+                      <button type="submit" class="btn  "style="margin-top: 10px; background-color: #2A9D8F; color: #FFFFFF">Salvar</button>
+                    </div>                                         
+                  </form>              
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  
+  </body>
+</html>
