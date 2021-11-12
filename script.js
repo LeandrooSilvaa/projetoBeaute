@@ -59,11 +59,12 @@ var alteraSenha = function () {
 
 }
 
-var logar = function(){
+var logar = function(event){
 
     var usuario = document.getElementById('usuario');
     var senha = document.getElementById('senha');
 
+    
     if(usuario.value != "leandro@gmail.com"){
 
         alert("Usuário e/ou senha inválidos. Por favor tente novamente");
@@ -77,13 +78,28 @@ var logar = function(){
         return false;
     }
     else{
-        alert("Bem vindo!")          
+        alert("Bem vindo!")                
     }
-
-    window.location.href = "https://www.youtube.com/watch?v=xIQY9u36h84";
+    /*
+    window.location.replace(https://www.youtube.com/watch?v=xIQY9u36h84);
+    console.log(event);*/
 }
+/*
+$('.btn').on('Click', function(event) {
+    event.preventDefault();
+    var url = $(this).data('https://www.google.com/');
+    location.replace(url);
+});
 
+*/
 
+(function(){
+    $('.Btn').on('click', function(event) {
+        event.preventDefault(); 
+        var url = $(this).data('https://www.google.com/');
+        location.replace(url);
+    });
+})();
 
 
 
