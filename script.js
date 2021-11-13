@@ -80,26 +80,10 @@ var logar = function(event){
     else{
         alert("Bem vindo!")                
     }
-    /*
-    window.location.replace(https://www.youtube.com/watch?v=xIQY9u36h84);
-    console.log(event);*/
+    
+    window.location.href = 'file:///C:/Users/Cliente/Documents/projeto/ProjetoEmpreendedor/minhaArea.html';
+    
 }
-/*
-$('.btn').on('Click', function(event) {
-    event.preventDefault();
-    var url = $(this).data('https://www.google.com/');
-    location.replace(url);
-});
-
-*/
-
-(function(){
-    $('.Btn').on('click', function(event) {
-        event.preventDefault(); 
-        var url = $(this).data('https://www.google.com/');
-        location.replace(url);
-    });
-})();
 
 
 
